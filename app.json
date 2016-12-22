@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/news/news",
+    "pages/blogs/blogs",
+    "pages/questions/questions",
+    "pages/discovery/discovery",
+    "pages/myself/myself",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundColor":"#005f3c",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "SegmentFault",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#999",
+    "selectedColor":"#005f3c",
+    "backgroundColor":"#FFF",
+    "borderStyle":"black",
+    "list":[
+      {
+        "pagePath":"pages/news/news",
+        "text":"头条",
+        "iconPath":"images/",
+        "selectedIconPath":"images/"
+      },
+      {
+        "pagePath":"pages/blogs/blogs",
+        "text":"专栏",
+        "iconPath":"images/",
+        "selectedIconPath":"images/"
+      },
+      {
+        "pagePath":"pages/questions/questions",
+        "text":"问答",
+        "iconPath":"images/",
+        "selectedIconPath":"images/"
+      },
+      {
+        "pagePath":"pages/discovery/discovery",
+        "text":"发现",
+        "iconPath":"images/",
+        "selectedIconPath":"images/"
+      },
+      {
+        "pagePath":"pages/myself/myself",
+        "text":"我的",
+        "iconPath":"images/",
+        "selectedIconPath":"images/"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
