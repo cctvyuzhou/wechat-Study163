@@ -17,8 +17,9 @@ Page({
     console.log(e);
     var that = this;
     var bannerIdx = e.target.dataset.index;
+      clearTimeout(that.data.banner.timeoutProcess);
       that.changeBanner(bannerIdx);
-    console.log(bannerIdx);
+      that.data.banner.timeoutProcess = setInterval(that.timetochange,3000);
   },
   onLoad: function () {
     console.log('onLoad index')
@@ -43,6 +44,11 @@ Page({
     console.log("onshow index");
     var that = this;
     that.data.banner.timeoutProcess = setInterval(that.timetochange,3000);
+  },
+  onHide:function(){
+    var that=this;
+
+    clearTimeout(that.data.banner.timeoutProcess);
   },
   /**根据bannerArray的index显示 */
   changeBanner:function(index){

@@ -79,10 +79,9 @@
   width:20rpx;
   height: 20rpx;
   margin: 10rpx;
-  border: 1px solid #EEE;
+  background-color: rgba(255,255,255,0.4);
   border-radius: 50%;
 }
 .banner-btn  .active{
   background-color: #FFF;
-  box-shadow: 0 0 3rpx #FFF;
 }
