@@ -12,9 +12,17 @@ function getNav(){
 function getAd(){
     return index_data.adSrc.ad;
 }
+/*获取courseArr*/
+function getCourse(){
+    return index_data.courseSrc.course_grp;
+}
+
+
+
 module.exports.getBanner = getBanner;
 module.exports.getNav = getNav;
 module.exports.getAd = getAd;
+module.exports.getCourse = getCourse;
 
 
 

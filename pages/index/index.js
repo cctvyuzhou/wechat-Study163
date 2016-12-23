@@ -12,6 +12,11 @@ Page({
     },
     nav:[],
     ad:[],
+    course_grp:[],
+    moreCourses:{
+      title:"已经到底，查看更多课程 >",
+      url:"../course/course"
+      },
     userInfo: {}
   },
   /*点击banner上的圆选择相应的图片 */
@@ -28,14 +33,16 @@ Page({
     var that = this;
     var bannerArr = util.getBanner(),
         navArr = util.getNav(),
-        adArr = util.getAd();
+        adArr = util.getAd(),
+        courseGrp = util.getCourse();
     that.setData({
         banner:{
           currindex:0,
           bannerimg:bannerArr
         },
         nav:navArr,
-        ad:adArr
+        ad:adArr,
+        course_grp:courseGrp
       });
     that.changeBanner(0);
     //调用应用实例的方法获取全局数据

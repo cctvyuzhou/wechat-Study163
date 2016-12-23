@@ -107,7 +107,7 @@
   text-align: center;
 }
 /*ad*/
-.ad{
+.ad ,.course-grp-item{
   width:700rpx;
   margin:20rpx 0;
   flex-wrap:wrap;
@@ -117,8 +117,53 @@
   width:700rpx;
   height: 160rpx;
 }
-.ad image{
+.ad image,.course-grp-item image{
   margin-top: 10rpx;
-  width:340rpx;
+  width:335rpx;
   height: 160rpx;
+}
+
+/*courseGrp*/
+.course-grp {
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+.course-grp-name{
+  width: 750rpx;
+  height: 50rpx;
+  justify-content:space-between;
+  align-items:center;
+  background-color: rgba(217, 217, 217, 0.2)
+}
+.course-grp-name text{
+  font-size: 30rpx;
+  line-height: 50rpx;
+  color: #000 ;
+  padding-left: 30rpx;
+  background:url("../../images/section_title_tip.png") left no-repeat;
+}
+.course-grp-name navigator{
+  font-size: 24rpx;
+  color: rgba(217, 217, 217, 0.8);
+  padding-right: 20rpx;
+}
+
+.course-grp-item navigator{
+  width:340rpx;
+}
+.course-grp-item text{
+  margin: 20rpx 0;
+  color:#000;
+  font-size: 30rpx;
+}
+.course-grp-item wx-text:last-child{
+  margin-top: 0;
+  color:red;
+  font-size: 24rpx;
+}
+/*更多课程*/
+.navigator-course{
+  padding: 10rpx 0 40rpx;
+  color:#4bbc93;
+  font-size: 24rpx;
 }

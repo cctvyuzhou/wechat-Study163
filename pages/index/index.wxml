@@ -46,4 +46,26 @@
       </navigator>
     </block>
   </view>
+  <!--courses grow-->
+  <view class="course-grp flex" >
+    <block wx:for="{{course_grp}}" wx:for-idx="idx" wx:for-item="block_item">
+      <view class="course-grp-name flex">
+        <text>{{block_item.title.left}}</text>
+        <navigator url="{{block_item.navigator}}">{{block_item.title.right}} >;</navigator>
+      </view>
+      <view class="course-grp-item flex">
+        <block wx:for="{{block_item.courses}}" wx:for-item="item">
+          <navigator url="{{item.navigator}}" class="flex flex-col">
+            <image src="{{item.imgurl}}"></image>
+            <text>{{item.title}}</text>
+            <text>{{item.price}}</text>
+          </navigator>
+        </block>
+      </view>
+    </block>
+  </view>
+  <!--全部课程-->
+  <view class="navigator-course">
+    <navigator url="{{moreCourses.url}}">{{moreCourses.title}}</navigator>
+  </view>
 </view>
