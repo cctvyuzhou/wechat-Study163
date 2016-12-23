@@ -1,6 +1,32 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="header">
-    <text>SegmentFault</text>
+<view class="pageContainer">
+  <!--search-->
+  <view class="search flex">
+    <view class="search-left">
+      <image src="../../images/search.png"></image>
+      <input placeholder="网易云课堂" placeholder-class="search-placeholder"/>
+    </view>
+    <view class="search-right flex-item" bindtap="upper">
+      <image src="../../images/email.png"></image>
+    </view>
+  </view>
+  <!--banner-->
+  <view class="bannerbox">
+    <!--bannerImg-->
+    <view class="banner flex">
+      <block wx:for="{{banner.bannerimg}}"  wx:for-index="idx" wx:for-item="item"    >
+        <view class="banner-item">
+          <navigator url="{{item.navigator}}">
+            <image src="{{item.imgurl}}" class="bannerimg {{item.class}}"></image>
+          </navigator>
+        </view>
+      </block>
+    </view>
+    <!--bannerBtn-->
+    <view  class="banner-btn flex">
+      <block wx:for="{{banner.bannerimg}}" wx:for-index="idx" wx:for-item="item">
+          <view data-index="{{idx}}" bindtap="bindStlBanner" class="{{item.class}}"></view>
+      </block>
+    </view>
   </view>
 </view>

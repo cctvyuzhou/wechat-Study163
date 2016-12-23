@@ -1,10 +1,10 @@
 # wechat-SegmentFault
 
-微信中SegmentFault小程序--微信小程序 demo,学习于[RebeccaHanjw](https://github.com/RebeccaHanjw/weapp-wechat-zhihu)
+微信中网易云课堂小程序--微信小程序 demo,学习于[RebeccaHanjw](https://github.com/RebeccaHanjw/weapp-wechat-zhihu)
 
 # description
 
-界面及交互设计来自知乎 Android 版本
+界面及交互设计来自网易云课堂 Android 版本
 
 工具: 微信 [web 开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=1474644089359)
 
