@@ -10,6 +10,8 @@ Page({
       currindex:0,
       bannerimg:[]
     },
+    nav:[],
+    ad:[],
     userInfo: {}
   },
   /*点击banner上的圆选择相应的图片 */
@@ -24,12 +26,16 @@ Page({
   onLoad: function () {
     console.log('onLoad index')
     var that = this;
-    var bannerArr = util.getBanner();
+    var bannerArr = util.getBanner(),
+        navArr = util.getNav(),
+        adArr = util.getAd();
     that.setData({
         banner:{
           currindex:0,
           bannerimg:bannerArr
-        }
+        },
+        nav:navArr,
+        ad:adArr
       });
     that.changeBanner(0);
     //调用应用实例的方法获取全局数据
@@ -39,11 +45,13 @@ Page({
         userInfo:userInfo
       })
     })
+    console.log(that.data);
   },
   onShow:function(){
     console.log("onshow index");
     var that = this;
     that.data.banner.timeoutProcess = setInterval(that.timetochange,3000);
+    console.log(that.data);
   },
   onHide:function(){
     var that=this;

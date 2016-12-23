@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="pageContainer">
+<view class="pageContainer  bgC">
   <!--search-->
   <view class="search flex">
     <view class="search-left">
@@ -28,5 +28,22 @@
           <view data-index="{{idx}}" bindtap="bindStlBanner" class="{{item.class}}"></view>
       </block>
     </view>
+  </view>
+  <!--nav-->
+  <view class="nav flex">
+    <block wx:for="{{nav}}" wx:for-item="item">
+      <navigator url="{{item.navigator}}" class="nav-item">
+        <image src="{{item.imgurl}}"></image>
+        <text>{{item.title}}</text>
+      </navigator>
+    </block>
+  </view>
+  <!--ad-->
+  <view class="ad flex">
+    <block wx:for="{{ad}}" wx:for-item="item">
+      <navigator url="{{item.navigator}}">
+        <image src="{{item.imgurl}}"></image>
+      </navigator>
+    </block>
   </view>
 </view>

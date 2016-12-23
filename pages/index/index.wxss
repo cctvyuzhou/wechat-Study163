@@ -44,7 +44,6 @@
 .pageContainer{
   padding: 0;
   font-size: 14rpx;
-  background: #F0F4F3;
   color: #000;
 }
 
@@ -73,7 +72,7 @@
   position: absolute;
   bottom:20rpx;
   flex-direction:row;
- justify-content:center;
+  justify-content:center;
 }
 .banner-btn view{
   width:20rpx;
@@ -84,4 +83,42 @@
 }
 .banner-btn  .active{
   background-color: #FFF;
+}
+
+/*nav*/
+.nav{
+ flex-wrap:wrap;
+ justify-content:center;
+}
+.nav-item{
+  margin: 30rpx 50rpx 10rpx;
+  width:80rpx;
+}
+.nav-item image{
+  width:80rpx;
+  height: 80rpx;
+  border-radius:50%;
+}
+.nav-item text{
+  width:80rpx;
+  font-size: 16rpx;
+  color:#000;
+  display: inline-block;
+  text-align: center;
+}
+/*ad*/
+.ad{
+  width:700rpx;
+  margin:20rpx 0;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.ad navigator:first-child image{
+  width:700rpx;
+  height: 160rpx;
+}
+.ad image{
+  margin-top: 10rpx;
+  width:340rpx;
+  height: 160rpx;
 }

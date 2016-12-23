@@ -39,7 +39,7 @@
         "selectedIconPath":"images/tab_mystudy2.png"
       },
       {
-        "pagePath":"pages/account/account",
+        "pagePath":"pages/accounts/accounts",
         "text":"帐号",
         "iconPath":"images/tab_account1.png",
         "selectedIconPath":"images/tab_account1.png"
