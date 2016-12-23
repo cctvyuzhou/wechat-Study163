@@ -1,6 +1,6 @@
 # wechat-SegmentFault
 
-微信中网易云课堂小程序--微信小程序 demo,学习于[RebeccaHanjw](https://github.com/RebeccaHanjw/weapp-wechat-zhihu)
+微信中网易云课堂小程序--微信小程序 demo,学习于[weapp-wechat-zhihu](https://github.com/RebeccaHanjw/weapp-wechat-zhihu)
 
 # description
 
