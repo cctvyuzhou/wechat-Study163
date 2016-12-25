@@ -23,7 +23,7 @@ Page({
   bindStlBanner:function(e){
     console.log(e);
     var that = this;
-    var bannerIdx = e.target.dataset.index;
+    var bannerIdx = e.currentTarget.dataset.index;
       clearTimeout(that.data.banner.timeoutProcess);
       that.changeBanner(bannerIdx);
       that.data.banner.timeoutProcess = setInterval(that.timetochange,3000);

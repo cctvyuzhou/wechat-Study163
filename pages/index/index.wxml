@@ -10,6 +10,8 @@
       <image src="../../images/email.png"></image>
     </view>
   </view>
+
+
   <!--banner-->
   <view class="bannerbox">
     <!--bannerImg-->
