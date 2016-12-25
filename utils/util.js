@@ -1,7 +1,7 @@
 
 var index_data = require('../data/index_data.js');
 var course_data = require("../data/course_data.js");
-
+var mystudy_data = require("../data/mystudy_data.js");
 /*index.wxml*/
 /*获取bannerArr*/
 function getBanner(){
@@ -25,13 +25,17 @@ function getCourse(){
 function getCourses(){
     return course_data.courseItem.courses;
 }
-
-
+/*mystudy.wxml*/
+/*获取studied*/
+function getStudied(){
+    return mystudy_data.mystudySrc.studied
+}
 module.exports.getBanner = getBanner;
 module.exports.getNav = getNav;
 module.exports.getAd = getAd;
 module.exports.getCourse = getCourse;
 module.exports.getCourses = getCourses;
+module.exports.getStudied = getStudied;
 
 
 
