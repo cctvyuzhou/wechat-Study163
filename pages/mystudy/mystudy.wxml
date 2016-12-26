@@ -1,7 +1,11 @@
 <!--pages/mystudy/mystudy.wxml-->
+<view  class="logo"  style="display:{{hidden=='true'?'block':'none'}}">
+    <view class="hd-email " bindtap="email">
+        <image src="../../images/email.png"></image>
+    </view>
+</view>
 <scroll-view class="pageContainer"  bindscroll="scrooll" scroll-y="true" >
-    <view  class="logo"  wx:if="{{hidden=='true'}}"></view>
-    <view class="header" wx:if="{{hidden!='true'}}">
+    <view class="header" style="display:{{hidden=='false'?'block':'none'}}">
         <image src="../../images/default_head_circle.png" animation="{{userImgAnimation}}"></image>
         <view class="styState flex" >
             <view animation="{{styStateAnimation}}">

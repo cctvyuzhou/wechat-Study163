@@ -18,20 +18,23 @@
 }
 
 /*head   search*/
-.pageContainer .search{
+.hd-search{
+  position: relative;
   width: 735rpx;
   height: 65rpx;
   padding: 12.5rpx 0 12.5rpx 15rpx;
   background: #4bbc93;
 }
-.pageContainer .search-left{
-  flex: 15;
+.search-left{
+  position: absolute;
   background: #52CC9F;
+  box-shadow: 0 0 2rpx 2rpx rgba(0, 0, 0, 0.2);
   text-align: left;
-}
-.pageContainer .search-left input{
-  display: inline-block;
   height: 65rpx;
+}
+.search-left input{
+  display: inline-block;
+  width: 570rpx;
   color:#FFF;
   font-size: 26rpx;
 }
@@ -40,17 +43,17 @@
   line-height: 26rpx;
   padding-top: 5rpx;
 }
-.pageContainer .search .search-left image{
+ .search-left image{
   display: inline-block;
   width: 35rpx;
   height: 35rpx;
   padding: 15rpx 15rpx 15rpx 20rpx;
 }
-.pageContainer .search .search-right{
-  flex: 2;
-  margin-left:20rpx;
+.hd-email{
+  position: absolute;
+  right: 15rpx;
 }
-.pageContainer .search .search-right image{
+.hd-email image{
   width: 35rpx;
   height: 35rpx;
   padding: 15rpx;
@@ -70,4 +73,16 @@
   margin-top: 10rpx;
   width:335rpx;
   height: 160rpx;
+}
+/*head logo*/
+.logo{
+    height: 65rpx;
+    width:750rpx;
+    z-index: 10;
+    position: absolute;
+    top:0;
+    left:0;
+    background: url("../../images/logo_bg.png") left no-repeat;
+    background-size: 219rpx 65rpx;
+    background-color: #2cc17B;
 }

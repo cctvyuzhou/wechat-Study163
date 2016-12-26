@@ -1,15 +1,8 @@
 <!--index.wxml-->
 <view class="pageContainer  bgC">
   <!--search-->
-  <view class="search flex">
-    <view class="search-left">
-      <image src="../../images/search.png"></image>
-      <input placeholder="网易云课堂" placeholder-class="search-placeholder"/>
-    </view>
-    <view class="search-right flex-item" bindtap="upper">
-      <image src="../../images/email.png"></image>
-    </view>
-  </view>
+<import src="../other/template.wxml"/>
+<template is="search"/>
 
 
   <!--banner-->

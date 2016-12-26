@@ -8,7 +8,6 @@
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundColor":"#31a030",
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "网易云课堂",
@@ -42,7 +41,7 @@
         "pagePath":"pages/accounts/accounts",
         "text":"帐号",
         "iconPath":"images/tab_account1.png",
-        "selectedIconPath":"images/tab_account1.png"
+        "selectedIconPath":"images/tab_account2.png"
       }
     ]
   },
