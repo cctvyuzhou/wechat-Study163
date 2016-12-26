@@ -42,28 +42,35 @@ Page({
         
        console.log(e);
        console.log("比率"+ ratio);
-      if(top > 400 -130){                   //upper过多
+      if(top > 150){                   //upper过多(数值仅供参考)
           hid = "true";
+          that.setData({
+            hidden:hid
+          });
        }else{
+          //文字缩放动画
           animation = wx.createAnimation({
               transformOrigin: "50% 50%",
               timingFunction: "linear",
               delay: 0
             });
            animation.scale(ratio,ratio).opacity(ratio).step();
-
+           //头像大小位移动画
            headAmt = wx.createAnimation({
               transformOrigin: "50% 50%",
               timingFunction: "linear",
               delay: 0
             });
            headAmt.scale(ratio,ratio).opacity(ratio).translateY(top*2).step();//2是因为为rpx与px的原因 
+
+
+           //动画执行
+            that.setData({
+              hidden:hid,
+              styStateAnimation:animation.export(),
+              userImgAnimation:headAmt.export()
+            });
        }
-       that.setData({
-         hidden:hid,
-         styStateAnimation:animation.export(),
-         userImgAnimation:headAmt.export(),
-       });
        console.log(that.data);
   }
 })

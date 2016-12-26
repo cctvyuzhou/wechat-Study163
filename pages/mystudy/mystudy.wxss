@@ -1,17 +1,6 @@
 /* pages/mystudy/mystudy.wxss */
 .pageContainer{
     height: 1140rpx;
-    position: relative;
-}
-.logo{
-    height: 65rpx;
-    width:750rpx;
-    z-index: 10;
-    position: absolute;
-    top:0;
-    left:0;
-    background: url("../../images/logo_bg.png") left no-repeat;
-    background-size: 219rpx 65rpx;
 }
 
 /*header*/

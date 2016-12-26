@@ -1,2 +1,18 @@
 <!--pages/accounts/accounts.wxml-->
-<text>pages/accounts/accounts.wxml</text>
+<view class="pageContainer">
+    <view  class="logo"  style="display:{{hidden=='true'?'block':'none'}}">
+        <view class="hd-email " bindtap="email">
+            <image src="../../images/email.png"></image>
+        </view>
+    </view>
+    <navigator class="userID flex" url="{{IDinfoUrl}}">
+        <image src="{{user.avatarUrl}}"></image>
+        <text>{{user.nickName}}</text>
+    </navigator>
+    <block wx:for="{{info}}" wx:for-item="item">
+        <navigator class="userInfo flex {{item.cls}}" url="{{item.url}}">
+            <text>{{item.titleLeft}}</text>
+            <text>{{item.titleRight}}</text>
+        </navigator>
+    </block>
+</view>
