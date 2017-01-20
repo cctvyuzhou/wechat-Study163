@@ -1,4 +1,4 @@
-# wechat-SegmentFault
+# wechat-study163
 
 微信中网易云课堂小程序--微信小程序 demo,学习于[weapp-wechat-zhihu](https://github.com/RebeccaHanjw/weapp-wechat-zhihu)
 
@@ -11,7 +11,7 @@
 
 * _数据_: 使用伪造本地数据
 
-#Setup 
+#Setup
 ```
 git@github.com:LySnake/wechat-SegmentFault.git
 ```
