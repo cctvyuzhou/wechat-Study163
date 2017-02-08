@@ -79,7 +79,7 @@ var navSrc={
 var adSrc={
     ad:[
         {
-            imgurl:"http://imgsize.ph.126.net/?enlarge=true&imgurl=http://nos.netease.com/edu-image/9cb99e9e-d95f-4958-86cf-304de7245d33.jpg?imageView&quality=100_470x184x1x95.png",
+            imgurl:"http://imgsize.ph.126.net/?enlarge=true&imgurl=http://nos.netease.com/edu-image/951f373b-a3da-45e8-8402-a49b64deca2b.jpg?imageView&quality=100_470x184x1x95.png",
             navigator:"../other/other",
         },
         {
